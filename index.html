@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Change the CSS of the Image!</h1>
+        <span class="heading">JavaScript</span>
+
+        <div class="css-controller">
+            <label for="base">Base Color</label>
+            <input type="color" name="base" id="base" value="#ff8500">
+
+            <label for="width">Width</label>
+            <input type="range" id="width" name="width" min="10" max="100" value="50" data-sizing="%">
+
+            <label for="border-radius">Border-Radius</label>
+            <input type="range" id="border-radius" name="border-radius" min="0" max="50" value="15" data-sizing="px">
+
+            <label for="padding">Padding</label>
+            <input type="range" id="padding" name="padding" min="0" max="50" value="20" data-sizing="px">
+
+            <label for="blur">Blur</label>
+            <input type="range" id="blur" name="blur" min="0" max="10" value="0" data-sizing="px">
+        </div>
+
+        <img src="https://cdn.pixabay.com/photo/2015/05/15/02/07/computer-767781_1280.jpg" alt="Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
